@@ -1,0 +1,170 @@
+/* General Reset and Body Styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Splash Screen Styles */
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: rgb(246, 161, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    background: url('my pic 3.jpg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#splash h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+/* Main Content Container */
+.container {
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url("my pic 13.jpg.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hwb(0 95% 4%);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 30px;
+    max-width: 800px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(102, 222, 241, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 5;
+}
+
+.navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #16b1e5;
+}
+
+/* About Content Styling */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.about-content img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.about-content p {
+    max-width: 60%;
+    text-align: left;
+}
+
+/* Back Button Styling */
+#back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #16b1e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #0f86c2;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #splash h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section {
+        background-attachment: scroll;
+    }
+
+    .Instagram{
+        color: azure;
+    }
+}
